@@ -5,6 +5,6 @@ import (
 )
 
 func main() {
-	tools.GenTemplate(29, "combination-sum")
+	tools.GenTemplate(31, "next-permutation")
 }
 

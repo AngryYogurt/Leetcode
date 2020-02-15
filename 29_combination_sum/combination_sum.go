@@ -8,7 +8,7 @@ import (
 func main() {
 	fmt.Println(combinationSum([]int{2, 3, 6, 7}, 7))
 	fmt.Println(combinationSum([]int{1, 2, 3, 6, 7}, 7))
-	fmt.Println(combinationSum([]int{7,3,2}, 18))
+	fmt.Println(combinationSum([]int{7, 3, 2}, 18))
 }
 
 /*
@@ -21,7 +21,6 @@ type Result struct {
 	target     int
 	candidates []int
 }
-
 
 func combinationSum(candidates []int, target int) [][]int {
 	var result = Result{}
