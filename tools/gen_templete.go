@@ -12,8 +12,7 @@ func GenTemplate(sn int64, problem string) {
 	dir := fmt.Sprintf("%d_%s", sn, name)
 	os.Mkdir(dir, os.ModeDir)
 	f, _ := os.Create(filepath.Join(dir, name+".go"))
-	f.WriteString(`
-package main
+	f.WriteString(`package main
 
 func main(){
 	

@@ -5,6 +5,5 @@ import (
 )
 
 func main() {
-	tools.GenTemplate(31, "next-permutation")
+	tools.GenTemplate(683, "k-empty-slots")
 }
-
