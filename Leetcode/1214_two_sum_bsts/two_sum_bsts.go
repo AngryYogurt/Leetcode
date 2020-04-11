@@ -34,7 +34,10 @@ func main() {
 	}
 	tools.AssertObjectEqual(true, twoSumBSTs(root1, root2, 5))
 }
-
+/*
+ * 执行用时 :28 ms, 在所有 Go 提交中击败了61.11%的用户
+ * 内存消耗 :6.5 MB, 在所有 Go 提交中击败了20.00%的用户
+ */
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode

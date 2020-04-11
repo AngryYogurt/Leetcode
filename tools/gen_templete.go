@@ -7,9 +7,13 @@ import (
 	"strings"
 )
 
-func GenTemplate(sn int64, problem string) {
+func GenTemplate(path string, sn int64, problem string) {
 	name := strings.ReplaceAll(problem, "-", "_")
-	dir := fmt.Sprintf("%d_%s", sn, name)
+	dir := name
+	if sn >= 0 {
+		dir = fmt.Sprintf("%d_%s", sn, name)
+	}
+	dir = filepath.Join(path, dir)
 	if _, err := os.Stat(dir); os.IsExist(err) {
 		fmt.Println(fmt.Sprintf("%s is already exist", dir))
 	}

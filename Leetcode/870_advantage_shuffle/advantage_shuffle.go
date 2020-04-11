@@ -10,7 +10,10 @@ func main() {
 	fmt.Println(advantageCount([]int{2, 7, 11, 15}, []int{1, 10, 4, 11}))
 	fmt.Println(advantageCount([]int{12, 24, 8, 32}, []int{13, 25, 32, 11}))
 }
-
+/*
+ * 执行用时 :108 ms, 在所有 Go 提交中击败了66.67%的用户
+ * 内存消耗 :6.7 MB, 在所有 Go 提交中击败了50.00%的用户
+ */
 func advantageCount(A []int, B []int) []int {
 	result := make([]int, len(B))
 	sort.Slice(A, func(i, j int) bool { return A[i] < A[j] })

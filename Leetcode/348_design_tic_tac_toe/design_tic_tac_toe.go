@@ -2,7 +2,6 @@ package main
 
 import (
 	"github.com/AngryYogurt/leetcode/tools"
-	"strings"
 )
 
 func main() {
@@ -23,6 +22,11 @@ func main() {
 
 /*
  * O(1) 时间解
+ */
+
+/*
+ * 执行用时 :36 ms, 在所有 Go 提交中击败了94.12%的用户
+ * 内存消耗 :9 MB, 在所有 Go 提交中击败了100.00%的用户
  */
 type TicTacToe struct {
 	n      int
@@ -54,7 +58,6 @@ func (this *TicTacToe) Move(row int, col int, player int) int {
 	if row == col {
 		this.states[player-1][len(this.states[player-1])-2]++
 	}
-	strings.Contains()
 	if row+col == this.n-1 {
 		this.states[player-1][len(this.states[player-1])-1]++
 	}
