@@ -11,5 +11,5 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	tools.GenTemplate(currPath, 98, "validate-binary-search-tree")
+	tools.GenTemplate(currPath, 1012, "numbers-with-repeated-digits")
 }
