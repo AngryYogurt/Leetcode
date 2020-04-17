@@ -11,5 +11,5 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	tools.GenTemplate(currPath, 1012, "numbers-with-repeated-digits")
+	tools.GenTemplate(currPath, 154, "find-minimum-in-rotated-sorted-array-ii")
 }
