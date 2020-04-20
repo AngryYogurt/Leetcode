@@ -13,7 +13,6 @@ import (
 
 // TODO
 func solve(a string, b string, k int64) int32 {
-	sort.Sl
 	return 0
 }
 
