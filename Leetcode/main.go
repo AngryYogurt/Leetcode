@@ -11,5 +11,5 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	tools.GenTemplate(currPath, 89, "gray-code")
+	tools.GenTemplate(currPath, 105, "construct-binary-tree-from-preorder-and-inorder-traversal")
 }

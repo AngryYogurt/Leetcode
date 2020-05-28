@@ -14,7 +14,7 @@ func GenTemplate(path string, sn int64, problem string) {
 		dir = fmt.Sprintf("%d_%s", sn, name)
 	}
 	dir = filepath.Join(path, dir)
-	if _, err := os.Stat(dir); os.IsExist(err) {
+	if _, err := os.Stat(dir); !os.IsNotExist(err) {
 		fmt.Println(fmt.Sprintf("%s is already exist", dir))
 	}
 	os.Mkdir(dir, os.ModeDir)
