@@ -1,6 +1,6 @@
 package main
 
-import "github.com/AngryYogurt/leetcode/tools"
+import "github.com/AngryYogurt/ProgrammingProblem/tools"
 
 func main() {
 	tools.AssertObjectEqual(3, maxSubArray([]int{1, 2, -1, -2, 2, 1, -2, 1}))
