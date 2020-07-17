@@ -11,5 +11,5 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	tools.GenTemplate(currPath, 105, "construct-binary-tree-from-preorder-and-inorder-traversal")
+	tools.GenTemplate(currPath, 1265, "running-sum-of-1d-array")
 }
