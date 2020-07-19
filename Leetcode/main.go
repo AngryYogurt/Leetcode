@@ -11,5 +11,5 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	tools.GenTemplate(currPath, 1476, "subrectangle-queries")
+	tools.GenTemplate(currPath, 5465, "number-of-nodes-in-the-sub-tree-with-the-same-label")
 }
