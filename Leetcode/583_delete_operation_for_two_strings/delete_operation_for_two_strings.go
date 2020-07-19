@@ -1,6 +1,6 @@
 package main
 
-import "github.com/AngryYogurt/leetcode/tools"
+import "github.com/AngryYogurt/ProgrammingProblem/tools"
 
 func main() {
 	tools.AssertObjectEqual(2, minDistance("sea", "eat"))

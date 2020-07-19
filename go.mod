@@ -1,4 +1,4 @@
-module github.com/AngryYogurt/leetcode
+module github.com/AngryYogurt/ProgrammingProblem
 
 go 1.14
 

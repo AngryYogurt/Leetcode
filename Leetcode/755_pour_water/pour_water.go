@@ -1,6 +1,6 @@
 package main
 
-import "github.com/AngryYogurt/leetcode/tools"
+import "github.com/AngryYogurt/ProgrammingProblem/tools"
 
 func main() {
 	tools.AssertObjectEqual([]int{4, 4, 4, 4, 3, 3, 3, 3, 3, 4, 3, 2, 1}, pourWater([]int{1, 2, 3, 4, 3, 2, 1, 2, 3, 4, 3, 2, 1}, 10, 2))

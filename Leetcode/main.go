@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/AngryYogurt/leetcode/tools"
+	"github.com/AngryYogurt/ProgrammingProblem/tools"
 	"path/filepath"
 )
 

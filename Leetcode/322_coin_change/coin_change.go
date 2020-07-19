@@ -1,6 +1,6 @@
 package main
 
-import "github.com/AngryYogurt/leetcode/tools"
+import "github.com/AngryYogurt/ProgrammingProblem/tools"
 
 func main() {
 	tools.AssertObjectEqual(3, coinChange([]int{1, 2, 5}, 11))
