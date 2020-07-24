@@ -10,6 +10,7 @@ func main() {
 	currPath, err := filepath.Abs("./Leetcode")
 	if err != nil {
 		fmt.Println(err)
+		return
 	}
-	tools.GenTemplate(currPath, 5465, "number-of-nodes-in-the-sub-tree-with-the-same-label")
+	tools.GenTemplate(currPath, 1469, "find-all-the-lonely-nodes")
 }
