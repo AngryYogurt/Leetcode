@@ -1,6 +1,6 @@
 package main
 
-import "github.com/AngryYogurt/leetcode/tools"
+import "github.com/AngryYogurt/ProgrammingProblem/tools"
 
 func main() {
 	tools.AssertObjectEqual(49, maxArea([]int{1,8,6,2,5,4,8,3,7}))

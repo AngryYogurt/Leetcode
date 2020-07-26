@@ -1,3 +1,3 @@
 package main
 
-import "github.com/AngryYogurt/leetcode/tools"
+import "github.com/AngryYogurt/ProgrammingProblem/tools"
