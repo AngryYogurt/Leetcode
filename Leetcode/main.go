@@ -12,5 +12,5 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-	tools.GenTemplate(currPath, 1514, "path-with-maximum-probability")
+	tools.GenTemplate(currPath, 498, "diagonal-traverse")
 }
