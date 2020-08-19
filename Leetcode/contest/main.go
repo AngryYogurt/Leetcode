@@ -12,5 +12,5 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-	tools.GenTemplate(currPath, 498, "diagonal-traverse")
+	tools.GenTemplate(currPath, 841, "keys-and-rooms")
 }
