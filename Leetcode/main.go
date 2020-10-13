@@ -12,5 +12,5 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-	tools.GenTemplate(currPath, 841, "keys-and-rooms")
+	tools.GenTemplate(currPath, 10, "regular-expression-matching")
 }
