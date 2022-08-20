@@ -12,5 +12,5 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-	tools.GenTemplate(currPath, 10, "regular-expression-matching")
+	tools.GenTemplate(currPath, 94, "binary-tree-inorder-traversal")
 }
