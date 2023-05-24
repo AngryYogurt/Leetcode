@@ -12,5 +12,5 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-	tools.GenTemplate(currPath, 94, "binary-tree-inorder-traversal")
+	tools.GenTemplate(currPath, 3, "longest-substring-without-repeating-characters")
 }
