@@ -18,7 +18,10 @@ func GenTemplate(path string, sn int64, problem string) {
 		fmt.Println(fmt.Sprintf("%s is already exist", dir))
 		return
 	}
-	os.Mkdir(dir, os.ModeDir)
+	if err := os.Mkdir(dir, os.ModePerm|os.ModeDir); err != nil {
+		fmt.Println(fmt.Sprintf("mkdir error, err=%s", err))
+		return
+	}
 	f, _ := os.Create(filepath.Join(dir, name+".go"))
 	f.WriteString(`package main
 
