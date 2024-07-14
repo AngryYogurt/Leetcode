@@ -13,11 +13,33 @@ func main() {
 	tools.AssertObjectEqual(false, isValid("{[}]"))
 }
 
+var mapping = map[byte]byte{
+	'{': '}',
+	'(': ')',
+	'[': ']',
+}
+
+func isValid(s string) bool {
+	stack := make([]byte, 0, len(s))
+	for idx := range s {
+		switch v := s[idx]; v {
+		case '{', '(', '[':
+			stack = append(stack, v)
+		case '}', ')', ']':
+			if len(stack) <= 0 || mapping[stack[len(stack)-1]] != v {
+				return false
+			}
+			stack = stack[:len(stack)-1]
+		}
+	}
+	return len(stack) == 0
+}
+
 /*
  * 执行用时 :4 ms, 在所有 Go 提交中击败了9.64%的用户
  * 内存消耗 :7 MB, 在所有 Go 提交中击败了5.50%的用户
  */
-func isValid2(s string) bool {
+func isValid3(s string) bool {
 	l := len(s)
 	for l > 0 {
 		s = strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(s, "()", ""), "{}", ""), "[]", "")
@@ -34,7 +56,7 @@ func isValid2(s string) bool {
  * 执行用时 :0 ms, 在所有 Go 提交中击败了100.00%的用户
  * 内存消耗 :2 MB, 在所有 Go 提交中击败了56.94%的用户
  */
-func isValid(s string) bool {
+func isValid2(s string) bool {
 	tail := -1
 	stack := make([]byte, len(s))
 	for _, c := range s {
